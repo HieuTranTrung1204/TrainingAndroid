@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.quangdong.myapplication.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edTaiKhoan"
+        android:layout_alignBottom="@+id/edTaiKhoan"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:text="Tên tài khoản" />
+
+    <EditText
+        android:id="@+id/edTaiKhoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="60dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/edTaiKhoan"
+        android:layout_marginTop="24dp"
+        android:text="Mật khẩu" />
+
+    <EditText
+        android:id="@+id/edMatKhau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edTaiKhoan"
+        android:layout_below="@+id/edTaiKhoan"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edMatKhau"
+        android:layout_below="@+id/edMatKhau"
+        android:layout_marginTop="34dp"
+        android:text="Chiếm toàn bộ màn hình" />
+
+    <Button
+        android:id="@+id/btnChiem1Phan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnDangNhap"
+        android:layout_below="@+id/btnDangNhap"
+        android:layout_marginTop="44dp"
+        android:text="Chiếm 1 phần màn hình" />
+
+</RelativeLayout>
