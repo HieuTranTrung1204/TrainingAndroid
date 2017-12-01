@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,7 +37,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         String den  = GetDenstity(getApplicationContext());
-        ((TextView)findViewById(R.id.txt)).setText(den);;
+        ((TextView)findViewById(R.id.txt)).setText(den);
+
+        Log.d("HieuLog", "hello");
 
 
     }
